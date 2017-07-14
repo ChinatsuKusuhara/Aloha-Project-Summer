@@ -278,14 +278,36 @@ color:white;
 color:white;
 }
 
-.social{
-	background-color: black;
-	margin:100px;
-}
-
 footer{
 	display:flex;
+	justify-content: center;
+	flex-direction: column;
 }
+
+.social{
+	margin:100px;
+	align-self:center;
+	text-decoration: none;
+	display: inline-flex;
+}
+
+eMail{
+	display:block;
+	position:relative;
+	width:80%;
+}
+
+button{
+	background:red;
+	color:white;
+}
+
+input{
+	border-radius: 20x;
+}
+
+
+
 
 
 
