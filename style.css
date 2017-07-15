@@ -167,8 +167,8 @@ body{
 	max-width:1240px;
 }
 
- this is for the font on the headers
-h1,h2,h3,h4,h4,h6{
+/* /* this is for the font on the headers */
+h1,h2,h3,h4,h4,h6{ 
 font-family:'Playfair Display Normal',sans-serif;
 font-weight:300;
 font-style:normal;
@@ -198,18 +198,20 @@ font-style:normal;
 	 /* order:1;  */
 }
 
+
 img{
 	max-width:100%;
 }
 
 
- /* this is the log on the right side of header */
+ /* this is the logo on the right side of header */
 .carticon{ 
 	 /* order:2;  */
 	align-self:flex-end; 
 	width:50px;
 }
 
+/* this is the cart icon image at the right of the header */
 .carticon img{
 	max-width:50px;
 	align-self:right;
@@ -241,13 +243,14 @@ li{
 	flex-flow:space-between;
 }
  
-
+/* 
+this is attempting to get the sumbit button inside e-mail it's not working */
 input[type="button"]{
   background-color:red;
 }
 
 
-
+/* this is the section with the lady on top of flowers */
 .banner{
 	display:flex;
   background:
@@ -264,20 +267,22 @@ input[type="button"]{
 
 
 .banner h1{
-color:white;
-margin:20px;
-text-transform:uppercase;
-font-size:20px;
+	color:white;
+	margin:20px;
+	text-transform:uppercase;
+	font-size:20px;
 }
 
 .banner h2{
-color:white;
+	color:white;
 }
 
 .banner h3{
-color:white;
+	color:white;
 }
 
+
+/* this is the footer section with the social media items */
 footer{
 	display:flex;
 	justify-content: center;
@@ -291,23 +296,34 @@ footer{
 	display: inline-flex;
 }
 
-eMail{
-	display:block;
-	position:relative;
-	width:80%;
+
+/* this is attempting to get the sumbit button inside e-mail it's not working */ */
+
+form{
+	display:flex;
+}
+
+
+input [type=e-mail]{
+	display:inline-block;
+	position:absolute;
+	height:100px;
+	width:100px;
+	padding:100px,100px;
 }
 
 button{
 	background:red;
 	color:white;
+	padding:40px,30px
 }
 
 input{
 	border-radius: 20x;
 }
 
-
-
+/* 
+this is making the header responsive */
 
 @media (max-width:460px){
 .alohalogo{
