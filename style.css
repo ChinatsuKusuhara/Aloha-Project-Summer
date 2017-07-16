@@ -243,11 +243,7 @@ li{
 	flex-flow:space-between;
 }
  
-/* 
-this is attempting to get the sumbit button inside e-mail it's not working */
-input[type="button"]{
-  background-color:red;
-}
+
 
 
 /* this is the section with the lady on top of flowers */
@@ -281,6 +277,31 @@ input[type="button"]{
 	color:white;
 }
 
+/* this is the paragraph between the banner and the image grid */
+/* .descriptionContainer{
+	display:flex;
+} */
+
+.descriptioncontainer{
+	display:flex;
+}
+
+.description{
+	font-size:2.5rem;
+	font-style:italic;
+	width:100%;
+	height:300px;
+	text-align: center;
+	
+}
+
+.quality{
+	width:100%;
+	height:140px;
+	padding: 40px;
+	font-size:1.5rem;
+}
+
 
 /* this is the footer section with the social media items */
 footer{
@@ -311,6 +332,7 @@ input [type=e-mail]{
 	width:100px;
 	padding:100px,100px;
 }
+
 
 button{
 	background:red;
