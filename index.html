@@ -2,9 +2,11 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    {# this link is for media query #}
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {# this link is flickity for the main-carousel #}
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
+    {# This link is for fonts #}
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
     rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
      <link rel="stylesheet" href="style.css"> 
@@ -71,27 +73,36 @@
         </div>
       </section> 
 
-      <section class="container">
-        <h1> Most loved Products </h1>
-      </section>
-
       <section class="main-carousel">
-         <img src="assets/images/stretch-knit-dress.jpg" alt="stretch dress">
-         <h3>Dresses</h3>
-         <h2>Checked Stretch</h2>
-         <p>$169.00</p>
-         <!--attempting to do strech goal add cart icon 
-         <form>
-           input type="button" name="click" value="add to cart"
-        </form>-->
-         <img src="assets/images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
-         <h3>Shirts</h3>
-         <h2>Cotton Blue Shirt</h2>
-         <p>$89.00</p>
-         <img src="assets/images/checked-stretch-dress.jpg" alt="checkedstretch dress">
-         <h3>Dresses</h3>
-         <h2>Checked Stretch</h2>
-         <p>$129.00</p>
+
+        <h1> 
+            Most loved 
+          <span>
+            Products 
+          </span>
+        </h1>
+
+        <div class="Dress">
+            <img src="assets/images/stretch-knit-dress.jpg" alt="stretch dress">
+               <h3>Dresses</h3>
+               <h2>Checked Stretch</h2>
+               <p>$169.00</p>
+        </div>
+        
+        <div class="shirt">
+            <img src="assets/images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
+              <h3>Shirts</h3>
+              <h2>Cotton Blue Shirt</h2>
+              <p>$89.00</p> 
+        </div>
+
+              <img src="assets/images/checked-stretch-dress.jpg" alt="checkedstretch dress">
+              <h3>Dresses</h3>
+              <h2>Checked Stretch</h2>
+              <p>$129.00</p>
+       
+
+
           <img src="assets/images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
           <h3>Bags</h3>
           <h2>Blue Hipster Backpack</h2>
@@ -115,15 +126,16 @@
       </section>
         
       <section>
-        <div>
+       
        <img src="assets/images/wave-bkgd.jpg" alt="wave background">
        <h2> Sign up for <span>updates</span></h2> 
        <p> Stay updated on our latest product releases, be first to find out about upcoming sales, 
         and get free style tips from our blog. Unsubscribe at any time.</p>
+       <div>
        <form class="eMail" action="."></form>
          <input type="e-mail" name="your-email" value placeholder="Your Email">
          <input type="button" name="submit" value="Subscribe">
-        </div>
+       </div>
       </section>
 
       <footer>

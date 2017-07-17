@@ -277,9 +277,7 @@ li{
 }
 
 /* this is the paragraph between the banner and the image grid */
-/* .descriptionContainer{
-	display:flex;
-} */
+
 
 .descriptioncontainer{
 	display:flex;
@@ -316,6 +314,43 @@ li{
 	line-height:40px;
 }
 
+/* 
+this is the section using flickity to show the clothing items */
+/* The container is in the js sript file */
+/* need some help with this section if I put the div's in it makes my cell to small */
+
+.main-carousel h1{
+	color:black;
+	font-size:60px;
+	text-align: center;
+	font-style: italic;
+}
+
+.main-carousel h1 span{
+	color:magenta;
+}
+
+.main-carousel h3{
+color:red;
+font-size:1.5rem;
+margin-bottom:40px;
+line-height: 2rem;
+text-align: center;
+}
+
+.Dress{
+	margin: 20px;
+	text-align: center;
+	padding:50px;
+	position: absolute;
+}
+
+.shirt{
+	margin: 20px;
+	text-align: center;
+	padding:50px;
+	position: absolute;
+}
 
 /* this is the footer section with the social media items */
 footer{
