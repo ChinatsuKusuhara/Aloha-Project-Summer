@@ -294,9 +294,10 @@ li{
 }
 
 .description{
-	font-size:2.5rem;
+	font-size:1rem;
 	width:100%;
 	text-align: center;	
+	line-height: 2px;
 }
 
 .description span{
@@ -449,20 +450,27 @@ this is making the header responsive */
 
 .navmenu{
 	order:3;
-}
+ }
  }
  /* 
 /* this is tablet view */
-@media (max-width: 600px){
+@media screen and (min-width: 600px){
 	.carouselitem{
 		height:50%;
 	}
+
+.list{
+border-top:none;
+}
 }
 
 /* 
 this is desktop view */
-@media (max-width: 1240px){
+@media screen and (min-width: 1240px){
 	.carouselitem{
 		height:25%;
 	}
+list{
+border-top:none;
 } 
+}
