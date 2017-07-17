@@ -319,15 +319,25 @@ this is the section using flickity to show the clothing items */
 /* The container is in the js sript file */
 /* need some help with this section if I put the div's in it makes my cell to small */
 
+.items{
+	width:100%;
+}
 
-.main-carousel h1{
+.carouselitem{
+	width:100%;
+	height:500px;
+	margin:0,auto;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.main-carousel h2{
 	color:black;
 	font-size:60px;
-	text-align: center;
 	font-style: italic;
 }
 
-.main-carousel h1 span{
+.main-carousel h2 span{
 	color:magenta;
 }
 
@@ -336,54 +346,51 @@ this is the section using flickity to show the clothing items */
 	font-size:1.5rem;
 	margin-bottom:40px;
 	line-height: 2rem;
-	text-align: center;
 }
 
-.Dress{
-	margin: 20px;
-	text-align: center;
-	padding:50px;
-	position: absolute;
-}
 
-.shirt{
-	margin: 20px;
-	text-align: center;
-	padding:50px;
-	position: absolute;
-}
+
+
 
 /* this is the section with the sign up form */
 
-.form{
+.updates{
 	display:flex;
   background:
-  url(assets/images/wave-bkgd.jpg) no-repeat;
-	height:400px;
+  url(assets/images/wave-bkgd.jpg) no-repeat bottom;
+	height:500px;
 	width:100%;
-  background-size:contain, cover;
+  /* background-size:contain, cover; */
 	justify-content: center;
 	font-size:20px;
 	text-align: center;
-  margin-top: 150px;
+	margin-top: 150px;
+	align-items: center;
 }
 
-.form h1{
+input[type=email]{
+	height:30px;
+	color:magenta;
+}
+
+
+.updates h4{
 	color:white;
 	font-size:60px;
 	text-align: center;
 	font-style: italic;
 }
 
-.form h1 span{
+.updates h4 span{
 	font-style: bold;
 	color:white;
 	text-align: center;
 }
 
-.form p{
+.updates p{
 	color:white;
 	text-align: center;
+	height:auto;
 }
 
 /* this is the footer section with the social media items */
@@ -443,4 +450,19 @@ this is making the header responsive */
 .navmenu{
 	order:3;
 }
+ }
+ /* 
+/* this is tablet view */
+@media (max-width: 600px){
+	.carouselitem{
+		height:50%;
+	}
 }
+
+/* 
+this is desktop view */
+@media (max-width: 1240px){
+	.carouselitem{
+		height:25%;
+	}
+} 
