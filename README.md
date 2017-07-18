@@ -11,4 +11,3 @@ Jquery
 Flickity
 
 The objective was to create a responsive copy of a webpage following a designers vision using the tools above.
-url(assets/images/screen.png)

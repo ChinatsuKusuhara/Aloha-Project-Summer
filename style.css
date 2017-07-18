@@ -274,6 +274,7 @@ li{
 
 .banner h3{
 	color:white;
+	font-size:2 rem;
 }
 
 /* this is the paragraph between the banner and the image grid */
@@ -291,6 +292,7 @@ li{
 	padding:4px;
 	text-align: center;
 	margin-top: 50px;
+	font-size:2rem;
 }
 
 .description{
@@ -315,6 +317,14 @@ li{
 	line-height:40px;
 }
 
+.items h2{
+	font-style: italic;
+	padding:4px;
+	text-align: center;
+	margin-top: 50px;
+	font-size:2rem;
+}
+
 /* this is the section with all the images */
  .container{
 	 display:flex;
@@ -337,7 +347,6 @@ li{
 		background-size:100%;
 		position:absolute;
 	}
-
 
 	 .mens h3{
 		color:white;
@@ -405,29 +414,26 @@ this is the section using flickity to show the clothing items */
 
 .items{
 	width:100%;
+	height:auto;
 }
 
 .carouselitem{
 	width:100%;
 	height:500px;
 	margin:0,auto;
-	border-radius: 5px;
+	border-radius:5px;
 	text-align: center;
 }
 
 .main-carousel h2{
-	color:black;
-	font-size:60px;
-	font-style: italic;
-}
-
-.main-carousel h2 span{
-	color:magenta;
+	color:red;
+	font-size:0.5 rem;
+	font-style: italic
 }
 
 .main-carousel h3{
-	background-color:red;
-	font-size:1.5rem;
+	color:grey;
+	font-size:0.5rem;
 	margin-bottom:40px;
 	line-height: 2rem;
 }
@@ -492,25 +498,35 @@ input [type=button]{
 	color:white;
 	padding:10px,14px;
 	cursor:pointer;
+	border-radius: 20px;
 }
 
-input{
-	border-radius: 20x;
-}
+
+
 
 
 /* this is the footer section with the social media items */
-footer{
+.contact{
 	display:flex;
-	justify-content: center;
+	justify-content:center;
 	flex-direction: column;
+	background-color:black;
+	height:auto;
+  margin-top:4%;
+}
+
+.about{
+	color:white;
+	text-align:center;
 }
 
 .social{
-	margin:100px;
-	align-self:center;
-	text-decoration: none;
-	display: inline-flex;
+	display:inline-flex;
+	text-align:center;
+}
+
+.social span{
+	display:none
 }
 
 
