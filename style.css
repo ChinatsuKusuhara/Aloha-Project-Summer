@@ -339,27 +339,64 @@ li{
 	}
 
 
-	.mens p{
+	 .mens h3{
+		color:white;
+		font-size:20px;
+		position:relative;
+		margin-top:-30%;
+		margin-right:-60%;
+	} 
+
+	.hat{
+		width:50%;
+		position:absolute;
+		
+	}
+
+	.hat h3{
 		color:white;
 		font-size:20px;
 		position:relative;
 		margin-top:-30%;
 	}
-
-	.hat{
+	
+	.glasses{
 		width:50%;
 		position:absolute;
 	}
 
-	.hat p{
+	.glasses h3{
 		color:white;
-		font-size:100%
+		font-size:20px;
 		position:relative;
-		margin-top:-30%;
-		text-transfor:uppercase;
+		margin-top:-35%;
 	}
 
+	.sale{
+		width:50%;
+		position:absolute;
+	}
 
+	.sale h3{
+		color:white;
+		font-size:20px;
+		position:relative;
+		margin-top:-40%;
+		margin-bottom:50%;
+	}
+
+	.bags{
+		width:50%;
+		position:absolute;
+	}
+
+	.bags h3{
+		color:white;
+		font-size:20px;
+		position:relative;
+		margin-top:-40%;
+		margin-bottom:auto;
+	}
 
 /* 
 this is the section using flickity to show the clothing items */
