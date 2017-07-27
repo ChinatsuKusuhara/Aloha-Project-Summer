@@ -1,7 +1,7 @@
 $(function() {
-  //  $("a[href^='#']").not("a[href='#']").click(function() {
-  //     $("#"+$(this).attr("href").slice(1)+"").focus();
-  //  });
+   $("a[href^='#']").not("a[href='#']").click(function() {
+      $("#"+$(this).attr("href").slice(1)+"").focus();
+   });
     
   $('.main-carousel').flickity({
   cellAlign: 'center',
