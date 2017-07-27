@@ -1,8 +1,12 @@
 $(function() {
+  //  $("a[href^='#']").not("a[href='#']").click(function() {
+  //     $("#"+$(this).attr("href").slice(1)+"").focus();
+  //  });
+    
   $('.main-carousel').flickity({
   cellAlign: 'center',
   contain: true,
-  autoPlay:3000,
+  autoPlay:true,
   percentPosition: false,
   setGallerySize:true
 });
