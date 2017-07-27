@@ -1,604 +1,680 @@
 /*css reset*/
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
-body{
-	line-height: 1;
+
+body {
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
+
 /*
 this is for fonts*/
+
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('assets/fonts/fontawesome-webfont.eot?v=4.7.0');
-  src: url('assets/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-	font-family: 'Raleway';
-	src: url('assets/fonts/Raleway-Medium.eot');
-	src: url('assets/fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
-		url('assets/fonts/Raleway-Medium.woff2') format('woff2'),
-		url('assets/fonts/Raleway-Medium.woff') format('woff'),
-		url('assets/fonts/Raleway-Medium.ttf') format('truetype'),
-		url('assets/fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
-	font-weight: 400;
-	font-style: normal;
+    font-family: 'FontAwesome';
+    src: url('assets/fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('assets/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Raleway-Italic';
-	src: url('assets/fonts/Raleway-MediumItalic.eot');
-	src: url('assets/fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
-		url('assets/fonts/Raleway-MediumItalic.woff2') format('woff2'),
-		url('assets/fonts/Raleway-MediumItalic.woff') format('woff'),
-		url('assets/fonts/Raleway-MediumItalic.ttf') format('truetype'),
-		url('assets/fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
-	font-weight: 500;
-	font-style: italic;
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway-Medium.eot');
+    src: url('assets/fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Raleway-Medium.woff2') format('woff2'), url('assets/fonts/Raleway-Medium.woff') format('woff'), url('assets/fonts/Raleway-Medium.ttf') format('truetype'), url('assets/fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Raleway-Light-Italic';
-	src: url('assets/fonts/Raleway-ItalicRaleway-LightItalic.eot');
-	src: url('assets/fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
-		url('assets/fonts/Raleway-LightItalic.woff2') format('woff2'),
-		url('assets/fonts/Raleway-LightItalic.woff') format('woff'),
-		url('assets/fonts/Raleway-LightItalic.ttf') format('truetype'),
-		url('assets/fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
-	font-weight: 300;
-	font-style: italic;
+    font-family: 'Raleway-Italic';
+    src: url('assets/fonts/Raleway-MediumItalic.eot');
+    src: url('assets/fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Raleway-MediumItalic.woff2') format('woff2'), url('assets/fonts/Raleway-MediumItalic.woff') format('woff'), url('assets/fonts/Raleway-MediumItalic.ttf') format('truetype'), url('assets/fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
 }
 
 @font-face {
-	font-family: 'Raleway-Light';
-	src: url('assets/fonts/Raleway-Light.eot');
-	src: url('assets/fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
-		url('assets/fonts/Raleway-Light.woff2') format('woff2'),
-		url('assets/fonts/Raleway-Light.woff') format('woff'),
-		url('assets/fonts/Raleway-Light.ttf') format('truetype'),
-		url('assets/fonts/Raleway-Light.svg#Raleway-Light') format('svg');
-	font-weight: 300;
-	font-style: normal;
+    font-family: 'Raleway-Light-Italic';
+    src: url('assets/fonts/Raleway-ItalicRaleway-LightItalic.eot');
+    src: url('assets/fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Raleway-LightItalic.woff2') format('woff2'), url('assets/fonts/Raleway-LightItalic.woff') format('woff'), url('assets/fonts/Raleway-LightItalic.ttf') format('truetype'), url('assets/fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
 }
 
 @font-face {
-	font-family: 'Playfair Display Normal';
-	src: url('assets/fonts/PlayfairDisplay-Regular.eot');
-	src: url('assets/fontsPlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-		url('assets/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
-		url('assets/fonts/PlayfairDisplay-Regular.woff') format('woff'),
-		url('assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
-		url('assets/fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Raleway-Light';
+    src: url('assets/fonts/Raleway-Light.eot');
+    src: url('assets/fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Raleway-Light.woff2') format('woff2'), url('assets/fonts/Raleway-Light.woff') format('woff'), url('assets/fonts/Raleway-Light.ttf') format('truetype'), url('assets/fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Playfair Display Bold';
-	src: url('assets/fonts/PlayfairDisplay-Bold.eot');
-	src: url('assets/fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
-		url('assets/fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
-		url('assets/fonts/PlayfairDisplay-Bold.woff') format('woff'),
-		url('assets/fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
-		url('assets/fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
-	font-weight: bold;
-	font-style: normal;
+    font-family: 'Playfair Display Normal';
+    src: url('assets/fonts/PlayfairDisplay-Regular.eot');
+    src: url('assets/fontsPlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('assets/fonts/PlayfairDisplay-Regular.woff2') format('woff2'), url('assets/fonts/PlayfairDisplay-Regular.woff') format('woff'), url('assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype'), url('assets/fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Playfair Display Bold Italic';
-	src: url('assets/fonts/PlayfairDisplay-BoldItalic.eot');
-	src: url('assets/fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
-		url('assets/fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
-		url('assets/fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
-		url('assets/fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
-		url('assets/fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
-	font-weight: bold;
-	font-style: italic;
+    font-family: 'Playfair Display Bold';
+    src: url('assets/fonts/PlayfairDisplay-Bold.eot');
+    src: url('assets/fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'), url('assets/fonts/PlayfairDisplay-Bold.woff2') format('woff2'), url('assets/fonts/PlayfairDisplay-Bold.woff') format('woff'), url('assets/fonts/PlayfairDisplay-Bold.ttf') format('truetype'), url('assets/fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Playfair Display Italic';
-	src: url('assets/fonts/PlayfairDisplay-Italic.eot');
-	src: url('assets/fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
-		url('assets/fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
-		url('assets/fonts/PlayfairDisplay-Italic.woff') format('woff'),
-		url('assets/fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
-		url('assets/fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
-	font-weight: normal;
-	font-style: italic;
-
+    font-family: 'Playfair Display Bold Italic';
+    src: url('assets/fonts/PlayfairDisplay-BoldItalic.eot');
+    src: url('assets/fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'), url('assets/fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'), url('assets/fonts/PlayfairDisplay-BoldItalic.woff') format('woff'), url('assets/fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'), url('assets/fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
 }
+
+@font-face {
+    font-family: 'Playfair Display Italic';
+    src: url('assets/fonts/PlayfairDisplay-Italic.eot');
+    src: url('assets/fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'), url('assets/fonts/PlayfairDisplay-Italic.woff2') format('woff2'), url('assets/fonts/PlayfairDisplay-Italic.woff') format('woff'), url('assets/fonts/PlayfairDisplay-Italic.ttf') format('truetype'), url('assets/fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
 
 /*this will be applied to the whole document*/
-body{
-	width:100%;
-	font-size: 14px;
-	font-family:'Raleway-Light',sans-serif;	
-	font-weight: 300;
-	font-style: normal;
-	font:#2d2d2d;
-	margin:auto;
-	max-width:1240px;
+
+body {
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Raleway-Light', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font: #2d2d2d;
+    margin: auto;
+    max-width: 1240px;
 }
 
+
 /* /* this is for the font on the headers */
-h1,h2,h3,h4,h4,h6{ 
-font-family:'Playfair Display Normal',sans-serif;
-font-weight:300;
-font-style:normal;
-} 
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h6 {
+    font-family: 'Playfair Display Normal', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 
 /**{
 	box-sizing:border-box;
 	outline:none
 }*/
 
+
 /*this is the outside of the header */
-.headercontainer{
-	display:flex;
-	font-size: 14px;
-	text-transform: uppercase;
-	flex-wrap:wrap;
-	padding:5;
-	margin: 0 auto;
-	list-style: none;
-	justify-content: space-between;
+
+.headercontainer {
+    display: flex;
+    font-size: 14px;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    padding: 5;
+    margin: 0 auto;
+    list-style: none;
+    justify-content: space-between;
 }
+
 
 /*this is the logo on the left side of header*/
-.alohalogo{
-	width:100px;
-	align-self:flex-start;
-	 /* order:1;  */
+
+.alohalogo {
+    width: 100px;
+    align-self: flex-start;
+    /* order:1;  */
+}
+
+img {
+    max-width: 100%;
 }
 
 
-img{
-	max-width:100%;
+/* this is the logo on the right side of header */
+
+.carticon {
+    /* order:2;  */
+    align-self: flex-end;
+    width: 50px;
 }
 
-
- /* this is the logo on the right side of header */
-.carticon{ 
-	 /* order:2;  */
-	align-self:flex-end; 
-	width:50px;
-}
 
 /* this is the cart icon image at the right of the header */
-.carticon img{
-	max-width:50px;
-	align-self:right;
-	text-align:right;
+
+.carticon img {
+    max-width: 50px;
+    align-self: right;
+    text-align: right;
 }
-	
+
+
 /*this is the main navigation menu inside th header section	*/
+
 .navmenu {
-	color:#e2574c;
-	flex-wrap:wrap;
-	/*text-align: center;*/
-	align-self:center;
-	flex-flow:space-around;
-	margin:0 auto;
+    color: #e2574c;
+    flex-wrap: wrap;
+    /*text-align: center;*/
+    align-self: center;
+    flex-flow: space-around;
+    margin: 0 auto;
 }
+
 
 /*this is each items in the list inside the nav bar*/
-.list{
-	list-style: none;
-	display:inline-flex;
-	margin:5px;
-	padding:5px;
-	border-top:1px solid#d7d7d7;
+
+.list {
+    list-style: none;
+    display: inline-flex;
+    margin: 5px;
+    padding: 5px;
+    border-top: 1px solid#d7d7d7;
 }
 
-li{
-	margin:5px;
-	padding:5px;
-	flex-flow:space-between;
+li {
+    margin: 5px;
+    padding: 5px;
+    flex-flow: space-between;
 }
- 
-
 
 
 /* this is the section with the lady on top of flowers */
-.banner{
-	display:flex;
-  background:
-  url(assets/images/banner-girl.png) no-repeat center,
-  url(assets/images/flower-bkgd.jpg) repeat-x;
-	height:400px;
-	width:100%;
-  background-size:contain, cover;
-	text-align: center;
-	justify-content: center;
-	font-size:20px;
-	align-items: center;
+
+.banner {
+    display: flex;
+    background: url(assets/images/banner-girl.png) no-repeat center, url(assets/images/flower-bkgd.jpg) repeat-x;
+    height: 400px;
+    width: 100%;
+    background-size: contain, cover;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
 }
 
-
-.banner h1{
-	color:white;
-	margin:20px;
-	text-transform:uppercase;
-	font-size:20px;
+.banner h1 {
+    color: white;
+    margin: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
-.banner h2{
-	color:white;
+.banner h2 {
+    color: white;
 }
 
-.banner h3{
-	color:white;
-	font-size:2 rem;
+.banner h3 {
+    color: white;
+    font-size: 2 rem;
 }
+
 
 /* this is the paragraph between the banner and the image grid */
 
-
-.descriptioncontainer{
-	display:flex;
-	justify-content: center;
-	margin:0,auto;
-	width: 100%;
+.descriptioncontainer {
+    display: flex;
+    justify-content: center;
+    margin: 0, auto;
+    width: 100%;
 }
 
-.description h1{
-	font-style: italic;
-	padding:4px;
-	text-align: center;
-	margin-top: 50px;
-	font-size:2rem;
+.description h2 {
+    font-style: italic;
+    padding: 4px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
 }
 
-.description{
-	font-size:1rem;
-	width:100%;
-	text-align: center;	
-	line-height: 2px;
+.description {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    line-height: 2px;
 }
 
-.description span{
-	font-family: 'Playfair Display Bold';
-	font-weight: bold;
-	font-style: normal;
+.description span {
+    font-family: 'Playfair Display Bold';
+    font-weight: bold;
+    font-style: normal;
 }
 
-.quality{
-	width:100%;
-	padding: 40px;
-	font-size:1 rem;
-	text-align: left;
-	margin:0.5px;
-	line-height:40px;
+.quality {
+    width: 100%;
+    padding: 40px;
+    font-size: 1 rem;
+    text-align: left;
+    margin: 0.5px;
+    line-height: 40px;
 }
 
-.items h2{
-	font-style: italic;
-	padding:4px;
-	text-align: center;
-	margin-top: 50px;
-	font-size:2rem;
+.items h2 {
+    font-style: italic;
+    padding: 4px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
 }
+
 
 /* this is the section with all the images */
- .container{
-	 display:flex;
-	 flex-direction:column;
-	 flex-wrap:wrap;
-	 text-align:center;
-	 text-transform:uppercase;
-	 font-size: 14px;
-	 font-family:'Raleway',sans-serif;	
-	 font-weight: 400;
-	 font-style: normal;
-	 font:#2d2d2d;
-	 margin:auto;
-	 height:auto;
-	 	
- }
 
-	.mens{
-		width:100%;
-		background-size:100%;
-		position:absolute;
-	}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font: #2d2d2d;
+    margin: auto;
+    height: auto;
+}
 
-	 .mens h3{
-		color:white;
-		font-size:20px;
-		position:relative;
-		margin-top:-30%;
-		margin-right:-60%;
-	} 
+.mens {
+    width: 100%;
+    background-size: 100%;
+    position: absolute;
+}
 
-	.hat{
-		width:50%;
-		position:absolute;
-		
-	}
+.mens h3 {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    margin-top: -30%;
+    margin-right: -60%;
+}
 
-	.hat h3{
-		color:white;
-		font-size:20px;
-		position:relative;
-		margin-top:-30%;
-	}
-	
-	.glasses{
-		width:50%;
-		position:absolute;
-	}
+.hat {
+    width: 50%;
+    position: absolute;
+}
 
-	.glasses h3{
-		color:white;
-		font-size:20px;
-		position:relative;
-		margin-top:-35%;
-	}
+.hat h3 {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    margin-top: -30%;
+}
 
-	.sale{
-		width:50%;
-		position:absolute;
-	}
+.glasses {
+    width: 50%;
+    position: absolute;
+}
 
-	.sale h3{
-		color:white;
-		font-size:20px;
-		position:relative;
-		margin-top:-40%;
-		margin-bottom:50%;
-	}
+.glasses h3 {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    margin-top: -35%;
+}
 
-	.bags{
-		width:50%;
-		position:absolute;
-	}
+.sale {
+    width: 50%;
+    position: absolute;
+}
 
-	.bags h3{
-		color:white;
-		font-size:20px;
-		position:relative;
-		margin-top:-40%;
-		margin-bottom:auto;
-	}
+.sale h3 {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    margin-top: -40%;
+    margin-bottom: 50%;
+}
+
+.bags {
+    width: 50%;
+    position: absolute;
+}
+
+.bags h3 {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    margin-top: -40%;
+    margin-bottom: auto;
+}
+
 
 /* 
 this is the section using flickity to show the clothing items */
+
+
 /* The container is in the js sript file */
+
+
 /* need some help with this section if I put the div's in it makes my cell to small */
 
-.items{
-	width:100%;
-	height:auto;
+.items {
+    width: 100%;
+    height: auto;
 }
 
-.carouselitem{
-	width:100%;
-	height:500px;
-	margin:0,auto;
-	border-radius:5px;
-	text-align: center;
+.carouselitem {
+    width: 100%;
+    height: 500px;
+    margin: 0, auto;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.main-carousel h2{
-	color:red;
-	font-size:0.5 rem;
-	font-style: italic
+.main-carousel h2 {
+    color: red;
+    font-size: 0.5 rem;
+    font-style: italic
 }
 
-.main-carousel h3{
-	color:grey;
-	font-size:0.5rem;
-	margin-bottom:40px;
-	line-height: 2rem;
+.main-carousel h3 {
+    color: grey;
+    font-size: 0.5rem;
+    margin-bottom: 40px;
+    line-height: 2rem;
 }
-
-
-
 
 
 /* this is the section with the sign up form */
 
-.updates{
-	display:flex;
-  background:
-  url(assets/images/wave-bkgd.jpg) no-repeat bottom;
-	/* height:500px; */
-	width:100%;
-	justify-content: center;
-	font-size:20px;
-	text-align: center;
-	/* margin-top: 150px; */
-	align-items: center;
-	cursor:pointer;
+.updates {
+    display: flex;
+    background: url(assets/images/wave-bkgd.jpg) no-repeat bottom;
+    /* height:500px; */
+    width: 100%;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    /* margin-top: 150px; */
+    align-items: center;
+    cursor: pointer;
+}
+
+.updates h4 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-style: italic;
+}
+
+.updates h4 span {
+    font-style: bold;
+    color: white;
+    text-align: center;
+}
+
+.updates p {
+    color: white;
+    text-align: center;
+    height: auto;
 }
 
 
-.updates h4{
-	color:white;
-	font-size:60px;
-	text-align: center;
-	font-style: italic;
-}
+/* this is attempting to get the sumbit button inside e-mail it's not working */
 
-.updates h4 span{
-	font-style: bold;
-	color:white;
-	text-align: center;
-}
-
-.updates p{
-	color:white;
-	text-align: center;
-	height:auto;
-}
-
-/* this is attempting to get the sumbit button inside e-mail it's not working */ */
-
+*/
 /* .signup{
 	display:flex;
 } */
 
-input [type=e-mail]{
-	display:inline-block;
-	position:absolute;
-	padding:0.5rem 2rem;
-	padding-right:150px;
-	width:100%;
-	border-radius: 25px;
+input [type=e-mail] {
+    display: inline-block;
+    position: absolute;
+    padding: 0.5rem 2rem;
+    padding-right: 150px;
+    width: 100%;
+    border-radius: 25px;
 }
 
-input [type=button]{
-	background:red;
-	color:white;
-	padding:10px,14px;
-	cursor:pointer;
-	border-radius: 20px;
+input [type=button] {
+    background: red;
+    color: white;
+    padding: 10px, 14px;
+    cursor: pointer;
+    border-radius: 20px;
 }
 
 .screen-reader-text {
-   clip: rect(1px, 1px, 1px, 1px);
-   position: absolute !important;
-   height: 1px;
-   width: 1px;
-   overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
 
 
 /* this is the footer section with the social media items */
-.contact{
-	display:flex;
-	justify-content:center;
-	flex-direction: column;
-	background-color:black;
-	height:auto;
-  margin-top:4%;
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    height: auto;
+    margin-top: 4%;
 }
 
-.about{
-	color:white;
-	text-align:center;
+.about {
+    color: white;
+    text-align: center;
 }
 
-.social{
-	display:inline-flex;
-	text-align:center;
+.social {
+    display: inline-flex;
+    text-align: center;
 }
 
-.social span{
-	display:none
+.social span {
+    display: none
 }
-
 
 .screen-reader-text {
-   clip: rect(1px, 1px, 1px, 1px);
-   position: absolute !important;
-   height: 1px;
-   width: 1px;
-   overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
 
 .screen-reader-text:focus {
-   clip: auto !important;
-   display: block;
-   height: auto;
-   left: 5px;
-   top: 5px;
-	 width: auto;
-	 background-color:white;
-	 z-index: 100000; 
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    background-color: white;
+    z-index: 100000;
 }
 
 #main[tabindex="-1"]:focus {
-   outline: 0;
+    outline: 0;
 }
-
-
-
-
-
 
 
 /* 
 this is making the header responsive */
 
-@media (max-width:460px){
-.alohalogo{
-	order:1;
+@media (max-width:460px) {
+    .alohalogo {
+        order: 1;
+    }
+    .carticon {
+        order: 2;
+    }
+    .navmenu {
+        order: 3;
+    }
 }
 
-.carticon{ 
-	order:2;
-}
 
-.navmenu{
-	order:3;
- }
- }
- /* 
+/* 
 /* this is tablet view */
-@media screen and (min-width: 600px){
-	.carouselitem{
-		height:50%;
-	}
 
-.list{
-border-top:none;
+@media screen and (min-width: 600px) {
+    .carouselitem {
+        height: 50%;
+    }
+    .list {
+        border-top: none;
+    }
 }
-}
+
 
 /* 
 this is desktop view */
-@media screen and (min-width: 1240px){
-	.carouselitem{
-		height:25%;
-	}
-list{
-border-top:none;
-} 
+
+@media screen and (min-width: 1240px) {
+    .carouselitem {
+        height: 25%;
+    }
+    list {
+        border-top: none;
+    }
 }
