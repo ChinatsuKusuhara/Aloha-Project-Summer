@@ -12,4 +12,6 @@ Flickity
 
 The objective was to create a responsive copy of a webpage following a designers vision using the tools above.
 
-[GitHub](https://isha21.github.io/Aloha-Project-Summer/)
+The link to the site is [GitHub](https://isha21.github.io/Aloha-Project-Summer/)
+
+![Alt Text](../images/screen.png)
