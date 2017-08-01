@@ -14,4 +14,4 @@ The objective was to create a responsive copy of a webpage following a designers
 
 The link to the site is [GitHub](https://isha21.github.io/Aloha-Project-Summer/)
 
-![Alt Text](../images/screen.png)
+![Alt screenshot](/images/screen.png)
