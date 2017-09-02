@@ -336,22 +336,17 @@ li {
     justify-content: center;
     font-size:2.5rem;
     align-items: center;
-    font-weight:700px;
+    font-weight:400px;
     color:#fff;
 }
 
-.banner span{
-    padding:100px;
-    text-align:center;
-}
 
 .banner h1 {
     margin: 20px;
     text-transform: uppercase;
     font-size: 20px;
-  
-}
 
+}
 
 
 .banner h3 {
