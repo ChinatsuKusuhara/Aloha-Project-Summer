@@ -261,6 +261,7 @@ h6 {
     margin: 0 auto;
     list-style: none;
     justify-content: space-between;
+    font-weight:bold;
 }
 
 
@@ -315,6 +316,7 @@ img {
     margin: 5px;
     padding: 5px;
     border-top: 1px solid#d7d7d7;
+    font-weight:700;
 }
 
 li {
@@ -336,24 +338,27 @@ li {
     justify-content: center;
     font-size:2.5rem;
     align-items: center;
-    font-weight:400px;
+    font-weight:700px;
     color:#fff;
 }
 
+.banner span{
+    padding:100px;
+    text-align:center;
+}
 
 .banner h1 {
     margin: 20px;
     text-transform: uppercase;
     font-size: 20px;
-
+  
 }
+
 
 
 .banner h3 {
     font-size: 2 rem;
 }
-
-
 /* this is the paragraph between the banner and the image grid */
 
 .descriptioncontainer {
