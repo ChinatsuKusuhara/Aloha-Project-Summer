@@ -431,7 +431,13 @@ li {
 
 .mens{
     grid-column-start:span 2;
+
 }
+
+
+/* .mens h2{
+  position:relative;
+} */
 
 .womens{
     grid-column-end:span 2;
