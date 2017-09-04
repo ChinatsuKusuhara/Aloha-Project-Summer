@@ -409,7 +409,7 @@ li {
 
 /* this is the section with all the images */
 
-.container {
+.styles-container {
     display: grid;
     /* grid-column: repeat(4,1fr);
     grid-row:repeat(4,1fr);
@@ -421,77 +421,21 @@ li {
     font-style: normal;
     font: #2d2d2d;
     height: 100vh; */
-    grid-template-columns: repeat(4,1fr);
-    grid-column-gap: 1rem;
-    width:1120px;
-    margin-left:80px;
+    height:100vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:50% 50%;
+    max-width:100%;
+    grid-column-gap:0.5rem;
+    grid-row-gap:0.5rem;
 }
 
-.mens {
-    width: 100%;
-    background-size: 100%;
-    position: absolute;
+.mens{
+    grid-column-start:span 2;
 }
 
-.mens h3 {
-    color: white;
-    font-size: 20px;
-    position: relative;
-    margin-top: -30%;
-    margin-right: -60%;
+.womens{
+    grid-column-end:span 2;
 }
-
-.hat {
-    width: 50%;
-    position: absolute;
-}
-
-.hat h3 {
-    color: white;
-    font-size: 20px;
-    position: relative;
-    margin-top: -30%;
-}
-
-.glasses {
-    width: 50%;
-    position: absolute;
-}
-
-.glasses h3 {
-    color: white;
-    font-size: 20px;
-    position: relative;
-    margin-top: -35%;
-}
-
-.sale {
-    width: 50%;
-    position: absolute;
-}
-
-.sale h3 {
-    color: white;
-    font-size: 20px;
-    position: relative;
-    margin-top: -40%;
-    margin-bottom: 50%;
-}
-
-.bags {
-    width: 50%;
-    position: absolute;
-}
-
-.bags h3 {
-    color: white;
-    font-size: 20px;
-    position: relative;
-    margin-top: -40%;
-    margin-bottom: auto;
-}
-
-
 /* 
 this is the section using flickity to show the clothing items */
 
@@ -512,7 +456,7 @@ this is the section using flickity to show the clothing items */
     margin: 0, auto;
     border-radius: 5px;
     text-align: center;
-}
+} 
 
 .main-carousel h2 {
     color: red;
